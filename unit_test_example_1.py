@@ -9,7 +9,7 @@ class Circle:
     
     def __init__(self, radius):
         # Define the initialization method below
-        pattern = re.compile("^\\-?[1-9]")
+        pattern = re.compile("^\\-?[0-9]")
         if(pattern.match(str(radius))):
             if(radius >= 0 and radius <= 1000):
                 self.radius = radius
