@@ -41,7 +41,7 @@ class MobileInventory:
 			raise TypeError("Requested stock must be a dictionary")
 		else:
 			for key in requested_stock.keys():
-				if(notisinstance(key, str)):
+				if(not isinstance(key, str)):
 					raise ValueError("Mobile model name must be a string")
 			for val in requested_stock.values():
 				if(not isinstance(val, int)):
