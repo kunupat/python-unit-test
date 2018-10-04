@@ -22,7 +22,7 @@ class MobileInventory:
 					break;	
 
 	def add_stock(self, new_stock):
-		if(notisinstance(new_stock, dict)):
+		if(not isinstance(new_stock, dict)):
 			raise TypeError("Input stock must be a dictionary")
 		else:
 			for key in new_stock.keys():
